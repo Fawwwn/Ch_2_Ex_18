@@ -18,12 +18,21 @@ int main()
 	using std::cin; 
 	using std::endl;
 
-	const int totalCus = 16500;
-		const double recCus = 0.15;
-		const double citrusCus = 0.58;
+	int totalCus;
+	double recCus;
+	double citrusCus;
 
-		const double totalrecCus = recCus * totalCus;
-		const double totalcitrusCus = citrusCus * totalrecCus;
+	cout << "How many people were surveyed? " << endl;
+		cin >> totalCus;
+
+		cout << "What is the percentage of people that purchased one or more drink per week? (Decimal Form) " << endl;
+		cin >> recCus;
+
+		cout << "What is the percentage of people who enjoy citrus? (Decimal Form)" << endl;
+		cin >> citrusCus;
+
+	 double totalrecCus = recCus * totalCus;
+	 double totalcitrusCus = citrusCus * totalrecCus;
 
 		cout << "This is the total of recurring customers: " << totalrecCus << endl;
 		cout << "This is the total of customers who prefer citrus flavor: " << totalcitrusCus << endl;
